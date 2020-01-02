@@ -231,7 +231,7 @@ function initMap() {
 	// Create a map object, and include the MapTypeId to add
 	// to the map type control.
 
-	var uluru = {lat: 56.946285, lng: 24.105078};
+	var uluru = {lat: 28.680848, lng: 77.0808242};
     var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 4,
 		center: uluru

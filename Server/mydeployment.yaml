@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bwi-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bwi
+  template:
+    metadata:
+      labels:
+        app: bwi
+    spec:
+      containers:
+      - name: bwi
+        image: https://au.icr.io/api/mynamespace1234/myrepo:latest

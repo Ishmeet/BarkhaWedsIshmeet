@@ -1,0 +1,21 @@
+FROM python:3.7.3
+
+LABEL Author="Ishmeet"
+LABEL E-mail="ishmeetsinghis@gmail.com"
+LABEL version="0.0.1"
+
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV FLASK_APP "backend/BarkhaWedsIshmeet.py"
+ENV FLASK_ENV "development"
+ENV FLASK_DEBUG True
+
+RUN mkdir /app
+WORKDIR /app
+
+RUN pip install -U Flask
+
+ADD BarkhaWedsIshmeet.py /app
+
+EXPOSE 5000
+
+CMD python BarkhaWedsIshmeet.py

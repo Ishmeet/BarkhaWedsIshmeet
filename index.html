@@ -269,8 +269,17 @@
 		<div class="map-area">
 			<div id="map" style="height:100%;"></div>
 		</div><!-- map-area -->
+		<script>
+			function initMap() {
+					var map = new google.maps.Map(document.getElementById('map'), {
+						center: { lat: 28.680848, lng: 77.0808242 },
+						scrollwheel: false,
+						zoom: 2
+					});
+				} // close function here
+		</script>
 		<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-oEyU88bRR6xcbV1gI_Cahc8ugKC_JPE&callback=initMap"></script> -->
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCCqMd4220GCiAthDhgNOm5YwE2BlAftQ&callback=initMap"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBObY9Xd6GnKuBy9U40gYhKrPKyEbcGuhM&callback=initMap"></script>
 		
 	</section><!-- section -->
 	
